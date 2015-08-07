@@ -110,9 +110,9 @@
         </profile>
     </profiles>
     <scm>
-        <connection>scm:git:git@github.com:Institute-of-Marine-Research-NMD/commons-biotic-jaxb.git</connection>
-        <url>scm:git:git@github.com:Institute-of-Marine-Research-NMD/commons-biotic-jaxb.git</url>
-        <developerConnection>scm:git:git@github.com:Institute-of-Marine-Research-NMD/commons-biotic-jaxb.git</developerConnection>
+        <connection>scm:git:git@github.com:Institute-of-Marine-Research-NMD/commons-cruiseseries-jaxb.git</connection>
+        <url>scm:git:git@github.com:Institute-of-Marine-Research-NMD/commons-cruiseseries-jaxb.git</url>
+        <developerConnection>scm:git:git@github.com:Institute-of-Marine-Research-NMD/commons-cruiseseries-jaxb.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
     <distributionManagement>
