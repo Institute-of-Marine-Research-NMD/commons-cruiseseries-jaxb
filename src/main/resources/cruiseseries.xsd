@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           targetNamespace="http://www.imr.no/formats/cruiseseries/v1"
+           xmlns="http://www.imr.no/formats/cruiseseries/v1">
+
+    <xs:element name="CruiseSeries" type="CruiseSeriesType" />
+
+    <xs:element name="CruiseSerie" type="CruiseSerieType" />
+
+    <!--
+        CruiseSeries type.
+    -->
+    <xs:complexType name="CruiseSeriesType">
+        <xs:sequence>
+            <xs:element name="CruiseSerie" type="CruiseSerieType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <!--
+        CruiseSerie type.
+    -->
+    <xs:complexType name="CruiseSerieType">
+        <xs:sequence>
+            <xs:element name="CruiseSeriesDescription" type="xs:string" />
+            <xs:element name="TimeStart" type="xs:date" />
+            <xs:element name="TimeStop" type="dateOrOngoingType"/>
+            <xs:element name="Sample" type="SampleType" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="cruiseseriename" type="xs:string" />
+    </xs:complexType>
+
+
+    <xs:simpleType name="dateOrOngoingType">
+        <xs:union>
+            <xs:simpleType>
+                <xs:restriction base="xs:date" />
+            </xs:simpleType>
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="ongoing" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:union>
+    </xs:simpleType>
+
+    <!--
+        Coverage type.
+    -->
+    <xs:complexType name="SampleType">
+        <xs:sequence>
+            <xs:element name="Missions" type="MissionsType" />
+        </xs:sequence>
+        <xs:attribute name="sampleTime" type="xs:string" />
+    </xs:complexType>
+
+
+    <!--
+        Missions type.
+    -->
+    <xs:complexType name="MissionsType">
+        <xs:sequence>
+            <xs:element name="Mission" type="MissionType" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!--
+        Mission type.
+    -->
+    <xs:complexType name="MissionType">
+        <xs:attribute name="cruisenr" type="xs:string" />
+    </xs:complexType>
+</xs:schema>
