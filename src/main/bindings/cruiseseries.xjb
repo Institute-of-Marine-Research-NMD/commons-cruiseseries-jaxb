@@ -21,12 +21,12 @@
         </jxb:bindings>
         <jxb:bindings node="//xs:complexType[@name='CruiseSeriesType']">
             <annox:annotate>
-                <annox:annotate annox:class="javax.xml.bind.annotation.XmlRootElement" name="cruiseSeries"/>
+                <annox:annotate annox:class="javax.xml.bind.annotation.XmlRootElement" name="CruiseSeries"/>
             </annox:annotate>
         </jxb:bindings>
         <jxb:bindings node="//xs:complexType[@name='CruiseSerieType']">
             <annox:annotate>
-                <annox:annotate annox:class="javax.xml.bind.annotation.XmlRootElement" name="cruiseSerie"/>
+                <annox:annotate annox:class="javax.xml.bind.annotation.XmlRootElement" name="CruiseSerie"/>
             </annox:annotate>
         </jxb:bindings>
     </jxb:bindings>
