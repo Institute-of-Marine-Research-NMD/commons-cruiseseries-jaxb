@@ -2,8 +2,8 @@
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
-           targetNamespace="http://www.imr.no/formats/cruiseseries/v1"
-           xmlns="http://www.imr.no/formats/cruiseseries/v1">
+           targetNamespace="http://www.imr.no/formats/nmdcruiseseries/v1"
+           xmlns="http://www.imr.no/formats/nmdcruiseseries/v1">
 
     <xs:element name="CruiseSeries" type="CruiseSeriesType" />
 
