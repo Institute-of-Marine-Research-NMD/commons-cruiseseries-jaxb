@@ -51,25 +51,25 @@
     -->
     <xs:complexType name="SampleType">
         <xs:sequence>
-            <xs:element name="Missions" type="MissionsType" />
+            <xs:element name="Cruises" type="CruisesType" />
         </xs:sequence>
         <xs:attribute name="sampleTime" type="xs:string" />
     </xs:complexType>
 
 
     <!--
-        Missions type.
+        Cruises type.
     -->
-    <xs:complexType name="MissionsType">
+    <xs:complexType name="CruisesType">
         <xs:sequence>
-            <xs:element name="Mission" type="MissionType" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="Cruise" type="CruiseType" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
 
     <!--
-        Mission type.
+        Cruise type.
     -->
-    <xs:complexType name="MissionType">
+    <xs:complexType name="CruiseType">
         <xs:attribute name="cruisenr" type="xs:string" />
     </xs:complexType>
 </xs:schema>
