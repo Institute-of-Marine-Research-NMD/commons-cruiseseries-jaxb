@@ -72,6 +72,6 @@
     -->
     <xs:complexType name="CruiseType">
         <xs:attribute name="cruisenr" type="xs:string" />
-        <xs:attribute name="cruiseid" type="xs:string" />
+        <xs:attribute name="shipName" type="xs:string" />
     </xs:complexType>
 </xs:schema>
