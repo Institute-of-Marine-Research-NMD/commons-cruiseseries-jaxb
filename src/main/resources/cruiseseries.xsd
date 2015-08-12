@@ -24,6 +24,7 @@
     -->
     <xs:complexType name="CruiseSerieType">
         <xs:sequence>
+            <xs:element name="CruiseSerieId" type="xs:string" />
             <xs:element name="CruiseSeriesDescription" type="xs:string" />
             <xs:element name="TimeStart" type="xs:date" />
             <xs:element name="TimeStop" type="dateOrOngoingType"/>
@@ -71,5 +72,6 @@
     -->
     <xs:complexType name="CruiseType">
         <xs:attribute name="cruisenr" type="xs:string" />
+        <xs:attribute name="id" type="xs:string" />
     </xs:complexType>
 </xs:schema>
