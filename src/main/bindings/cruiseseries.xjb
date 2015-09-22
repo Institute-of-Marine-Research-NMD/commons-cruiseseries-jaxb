@@ -14,7 +14,7 @@
             <jxb:serializable uid="1" />
         </jxb:globalBindings>
         <jxb:schemaBindings>
-            <jxb:package name="no.imr.nmdapi.generic.nmdcruiseseries.domain.v1" />
+            <jxb:package name="no.imr.commons.nmdcruiseseries.domain.v1" />
         </jxb:schemaBindings>
         <jxb:bindings>
             <namespace:prefix name="crs" />
