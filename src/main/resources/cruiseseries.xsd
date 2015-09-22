@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-    Container for all valid cruise xsds.
+    Container for all valid cruiseseries xsds.
 -->
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
