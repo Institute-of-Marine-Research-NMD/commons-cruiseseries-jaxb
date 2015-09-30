@@ -28,7 +28,7 @@
             <xs:element name="CruiseSeriesDescription" type="xs:string" />
             <xs:element name="TimeStart" type="xs:date" />
             <xs:element name="TimeStop" type="dateOrOngoingType"/>
-            <xs:element name="Sample" type="SampleType" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="Samples" type="SamplesType" minOccurs="0" maxOccurs="1" />
         </xs:sequence>
         <xs:attribute name="cruiseseriename" type="xs:string" />
     </xs:complexType>
@@ -47,6 +47,12 @@
         </xs:union>
     </xs:simpleType>
 
+    <xs:complexType name="SamplesType">
+        <xs:sequence>
+            <xs:element name="SampleType" type="SampleType" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
     <!--
         Coverage type.
     -->
@@ -54,7 +60,7 @@
         <xs:sequence>
             <xs:element name="Cruises" type="CruisesType" />
         </xs:sequence>
-        <xs:attribute name="sampleTime" type="xs:string" />
+        <xs:attribute name="sampleTime" type="xs:string" use="required" />
     </xs:complexType>
 
 
