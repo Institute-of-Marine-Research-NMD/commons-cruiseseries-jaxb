@@ -36,7 +36,6 @@
                         </goals>
                         <configuration>
                             <packageLevelAnnotations>true</packageLevelAnnotations>
-                            <generatePackage>no.imr.nmd.commons.cruiseseries.domain.v1</generatePackage>
                             <schemas>
                                 <schema>
                                     <fileset>
@@ -52,7 +51,6 @@
                             </schemas>
                             <generateDirectory>${project.build.directory}/generated-sources/xjc</generateDirectory>
                             <verbose>true</verbose>
-                            <bindingDirectory>${basedir}/src/main/bindings</bindingDirectory>
                             <episode>true</episode>
                             <extension>true</extension>
                             <args>
