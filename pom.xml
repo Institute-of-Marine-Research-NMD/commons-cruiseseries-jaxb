@@ -36,6 +36,7 @@
                         </goals>
                         <configuration>
                             <packageLevelAnnotations>true</packageLevelAnnotations>
+                            <generatePackage>no.imr.nmd.commons.cruiseseries.domain.v1</generatePackage>
                             <schemas>
                                 <schema>
                                     <fileset>
